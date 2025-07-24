@@ -8,7 +8,7 @@ export const quimicos = [
       { texto: "Dmitri Mendeleev", correta: false },
       { texto: "George Washington Carver", correta: true }
     ],
-    foto: "./img/George-W-carver.jpg",
+    foto: "./img/George-W-Carver.jpg",
     biografia: "Era um químico agrícola que aplicou conhecimentos químicos para desenvolver novos produtos a partir de culturas como amendoim, batata-doce e soja. Criou 500 corantes durante a Segunda Guerra Mundial, ajudando a economia agrícola do Sul dos EUA."
   },
   {
