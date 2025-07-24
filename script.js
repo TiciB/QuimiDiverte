@@ -118,10 +118,10 @@ function finishGame() {
       message = "Vamo tá estudando, hein?";
       break;
     case performance >= 40:
-      message = "Eu só digo uma coisa, eu nao digo é nada!";
+      message = "Eu só digo uma coisa, eu não digo é nada!";
       break;
     default:
-      message = "Aperta aí esse botão de saiba mais e vai estudar!";
+      message = "Vá estudar bença, vá!";
   }
 
   questionContainer.innerHTML = 
@@ -144,10 +144,8 @@ function showChemi(index) {
   imageEl.alt = `Retrato de ${chemi.nome}`;
   bioEl.textContent = chemi.biografia;
 
- /* if (index === quimicos.length - 1) {
-    nextBtn.textContent = "Voltar ao início";
-  } else {
-    nextBtn.textContent = "Próxima Pergunta";
-  }*/
+  if (index === quimicos.length - 2) {
+     nextChem.classList.add("hide");
+  } 
 }
 
