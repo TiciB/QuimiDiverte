@@ -6,7 +6,7 @@
 }
 
 body{
-  background-image: url('../img/background.png');
+  background-image: url('img/background.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -182,7 +182,7 @@ body{
     /* Removendo o fundo branco opaco para a imagem ficar visível */
     background: 
       linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), /* pode ajustar a opacidade */
-      url('./img/background.png');
+      url('img/background.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
