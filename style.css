@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url('../img/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  height: 9cm;
+}
+
+.app {
+  background: #e6e6e6;
+  width: 90%;
+  max-width: 700px;
+  margin: 100px auto 0;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.3),
+             -6px -6px 14px rgba(255, 255, 255, 0.8),
+              inset 2px 2px 4px rgba(255, 255, 255, 0.4),
+              inset -2px -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.app2 {
+  background: #e6e6e6;
+  width: 90%;
+  max-width: 700px;
+  margin: 100px auto 0;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.3),
+             -6px -6px 14px rgba(255, 255, 255, 0.8),
+              inset 2px 2px 4px rgba(255, 255, 255, 0.4),
+              inset -2px -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.app h1 {
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  border-bottom: 1px solid #333;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.app2 h1 {
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  border-bottom: 1px solid #333;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.quiz {
+  padding: 10px 0;
+}
+
+.quiz h2 {
+  font-family: "Exo 2", sans-serif;  
+  font-size: 20px;
+  color: #001e4d;
+  font-weight: 750;
+  margin-bottom: 10px;
+}
+
+#name {
+  padding: 20px 0;
+  font-family: "Exo 2", sans-serif;  
+  font-size: 30px;
+  color: #001e4d;
+  font-weight: 750;
+}
+
+
+.btn {
+  background: #fff;
+  color: #222;
+  font-weight: 500;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all background-color 0.2s;
+}
+
+.btn:hover:not([disabled]) {
+  background: #e0e0e0;
+  color: #222;
+}
+
+.btn:disabled {
+  cursor: no-drop;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;                
+  margin-top: 20px;
+}
+
+.next-btn {
+  background: #001e4d;
+  color: #fff;
+  font-weight: 650;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 4px;
+  cursor: pointer; 
+  text-align: center;
+  font-family: "Exo 2", sans-serif; 
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.next-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.correct {
+  background: #9aeabc;
+}
+
+.incorrect {
+  background: #ff9393;
+}
+
+#image {
+   width: 300px;         
+  height: 300px;       
+  object-fit: cover;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#bio {
+  font-family: "Exo 2", sans-serif;  
+  font-size: 20px;
+  color: #001e4d;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+}
+.chemi{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Removendo o fundo branco opaco para a imagem ficar visível */
+    background: 
+      linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), /* pode ajustar a opacidade */
+      url('./img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  .app,
+  .app2 {
+    width: 100%;
+    max-width: 100%;
+    flex: 1;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: transparent; /* importante manter transparente */
+  }
+
+  .app h1,
+  .app2 h1 {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    padding-bottom: 15px;
+    text-align: center;
+  }
+
+  #name {
+    font-size: clamp(1.2rem, 4vw, 1.5rem);
+    padding: 8px 0;
+    text-align: center;
+  }
+
+  .quiz {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .quiz h2 {
+    font-size: clamp(1rem, 4vw, 1.1rem);
+    text-align: center;
+  }
+
+  .quiz .answers-container {
+    width: 100%;
+  }
+
+  .quiz .answers-container .btn,
+  .btn-container .next-btn {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    font-size: clamp(0.9rem, 3vw, 1rem);
+    box-sizing: border-box;
+  }
+
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .chemi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+  }
+
+  #image {
+    width: min(250px, 80vw);
+    height: auto;
+    aspect-ratio: 1/1;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #bio {
+    font-size: clamp(0.9rem, 3vw, 1rem);
+    padding: 12px;
+    text-align: justify;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: transparent; /* transparente para fundo aparecer */
+  }
+}
